@@ -635,14 +635,36 @@ body {
 .card-link:focus {
   box-shadow: var(--shadow-card);
 }
-.card-thumb-img {
+.card-thumb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-thumb-text {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  width: 370px;
+  height: 294px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+.card-thumb-text:focus,
+.card-thumb-text:hover {
+  opacity: 0.9;
 }
 .card-content {
   padding: 20px 24px;
