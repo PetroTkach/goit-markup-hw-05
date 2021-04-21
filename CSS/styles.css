@@ -308,6 +308,25 @@ body {
 .section-img:last-child {
   margin-right: 0;
 }
+.img-text {
+  position: relative;
+}
+.section-img-text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--add-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  bottom: 0;
+  width: 370px;
+}
 /* Команда */
 
 .section-color {
@@ -615,6 +634,15 @@ body {
 .card-link:hover,
 .card-link:focus {
   box-shadow: var(--shadow-card);
+}
+.card-thumb-img {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 .card-content {
   padding: 20px 24px;
