@@ -222,8 +222,8 @@
     </main>
 
     <!-- Футер -->
-    <div class="footer-color link-network">
-      <footer class="footer link-network">
+    <footer class="footer-color link-network">
+      <div class="footer link-network">
         <!-- Контактні дані -->
         <div>
           <a href="./index.html" class="logo-footer"
@@ -288,7 +288,14 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>

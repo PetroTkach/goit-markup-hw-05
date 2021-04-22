@@ -45,10 +45,11 @@ body {
 }
 /* Шапка */
 .header {
-  /* position: fixed;
+  position: fixed;
   width: 100%;
-  min-height: 80px;
-  top: 0; */
+  height: 80px;
+  top: 0;
+  z-index: 10;
   background-color: var(--add-color);
   border-bottom: 1px solid var(--line-footer);
 }
@@ -665,6 +666,11 @@ body {
 .card-link:focus {
   box-shadow: var(--shadow-card);
 }
+.card-link:hover .card-thumb-text,
+.card-link:focus .card-thumb-text {
+  opacity: 0.9;
+  transform: translateY(0);
+}
 .card-thumb {
   position: relative;
   display: flex;
@@ -691,11 +697,13 @@ body {
   color: var(--add-color);
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  transform: translateY(100%);
 }
-.card-thumb-text:focus,
+/* .card-thumb-text:focus,
 .card-thumb-text:hover {
   opacity: 0.9;
-}
+  transform: translateY(0);
+} */
 .card-content {
   padding: 20px 24px;
   border: 1px solid var(--card-border);
