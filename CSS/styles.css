@@ -700,7 +700,7 @@ body {
 
   cursor: pointer;
 
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
@@ -730,6 +730,7 @@ body {
 }
 .card-link {
   text-decoration: none;
+  transition: box-shadow 250ms var(--cubic-bezier);
 }
 .card-link:hover,
 .card-link:focus {
@@ -761,7 +762,9 @@ body {
   background-color: var(--back-card);
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic-bezier) 250ms;
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
   pointer-events: none;
 }
 .card-thumb-text .text {
